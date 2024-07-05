@@ -1,0 +1,128 @@
+
+.banner-image{
+background-image: linear-gradient(to top,black,transparent),url("https://images.unsplash.com/photo-1503174971373-b1f69850bded?q=80&w=1826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+background-size: cover;
+height: 100vh;
+padding-top:76px; 
+/* background-repeat: no-repeat;
+background-position: center; */
+display:flex;
+flex-direction:column;
+justify-content:end;
+/* align-items: end; */
+align-items: center;
+/* background-image:linear-gradient(to top,black,transparent); */
+font-family: "Roboto";
+text-align: center;
+padding-bottom:15px;
+}
+
+
+.nav-elements{
+  margin-left: auto;
+}
+
+.banner-heading{
+  color:white;
+ 
+  font-size: 45px;
+  font-weight:500;
+}
+.banner-caption {
+ /* color: #f5f7fa; */
+ color: white;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+}
+.info-div{
+  text-align: center;
+  background-color:#F6F4ED;
+  padding:40px;
+}
+
+.info-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.info-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.info-button {
+  color: white;
+  background-color: #d0b200;
+  width: 330px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.info2-div{
+/* text-align:center; */
+  background-color:#ffffff;
+  padding:40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.info2-heading {
+  color: #183b56;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: 700;
+}
+.info2-description {
+  color: #5a7184;
+  font-family: "Roboto";
+  font-size: 16px;
+}
+.info2-button {
+  color: white;
+  background-color: #F56465;
+  width: 240px;
+  height: 45px;
+  border-width: 0;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+
+.menu-item-image {
+  border-radius: 16px;
+}
+.menu-card-title {
+  color: #323f4b;
+  font-family: "Roboto";
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 24px;
+}
+.menu-item-link {
+  color: #d0b200;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-weight: 500;
+}
+.menu-item-card {
+  border-radius: 16px;  
+}
+
+.photos-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* overflow-x:auto; */
+}
+
+.span-element{
+  color:orange;
+  font-family: "Roboto";
+  font-weight: bold;
+}
