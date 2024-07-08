@@ -227,25 +227,17 @@ function App() {
         </div>
       </div>
     </div>
-
-    <div className="image-div pt-5 pb-5 w-100">
-      {/* <div className="image-main" >
-      <img src="images/mainlogo.jpg"
-              class="food-munch-logo"
-            />
-      </div> */}
+    <div className="follow-us-section pt-5 pb-5">
       <div className="container">
         <div className="row">
-        <div className="download-div col-12">
-            <h1 className='info2-heading'>Download home interior guide</h1>
-            <p className='info2-description'>Don't forget to consider these fundamental design guidelines to know before you start interior designing!</p>
-            <a href="public/images/AARA Brouchre.pdf" download="AARA Brouchre.pdf"><button className='info2-button'>Download Now</button></a>
-            </div>
-        </div>
-      </div>
-           
-            
-    </div>
+          <div className="col-12 text-center">
+          <h1 className='follow-us-section-heading'>Download home interior guide</h1>
+            <p className=''>Don't forget to consider these fundamental design guidelines to know before you start interior designing!</p>
+            <a href="public/images/AARA Brouchre.pdf" download="AARA Brouchre.pdf"><button className=''>Download Now</button></a>
+          </div>
+          </div>
+          </div>
+          </div>
     <div className="footer-section pt-5 pb-5">
       <div className="container">
         <div className="row">
