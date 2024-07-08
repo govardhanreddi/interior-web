@@ -9,6 +9,15 @@ function App() {
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.location.href = whatsappUrl;
   };
+  function downloadPDF() {
+    const pdfUrl = 'https://raw.githubusercontent.com/govardhanreddi/interiors-web/main/public/images/AARA_Brochure.pdf';
+    const link = document.createElement('a');
+    link.href = pdfUrl;
+    link.download = 'your.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
 
   return (
     <div>
@@ -57,11 +66,16 @@ function App() {
         </div>
       </div>
       <div className="banner-image">
-        <div>
+        <div className="container">
+          <div className="row">
+          <div className='col-12'>
           <h1 className="banner-heading">Bring home beautiful interiors <span className='span-element'>that fit your budget</span></h1>
           <p className="banner-caption">Experience unmatched quality & timely delivery with Livspace</p>
           <button onClick={whatsAppredirect} className='info2-button'>VISIT US</button>
         </div>
+          </div>
+        </div>
+        
       </div>
       <div className='info-div' id="wcuSection">
         <h1 className='info-heading'>The home design you crave</h1>
@@ -233,6 +247,7 @@ function App() {
           <div className="col-12 text-center">
           <h1 className='follow-us-section-heading'>Download home interior guide</h1>
             <p className=''>Don't forget to consider these fundamental design guidelines to know before you start interior designing!</p>
+            <button class="download-button" onclick="downloadPDF()">Download PDF</button>
             <a href="public/images/AARA Brouchre.pdf" download="AARA Brouchre.pdf"><button className=''>Download Now</button></a>
           </div>
           </div>
