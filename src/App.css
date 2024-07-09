@@ -3,7 +3,6 @@
 background-image: linear-gradient(to top,black,transparent),url("https://images.unsplash.com/photo-1503174971373-b1f69850bded?q=80&w=1826&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 background-size: cover;
 height: 100vh;
-width:100vw;
 padding-top:76px; 
 /* background-repeat: no-repeat;
 background-position: center; */
@@ -17,7 +16,12 @@ font-family: "Roboto";
 text-align: center;
 padding-bottom:15px;
 }
-
+@media only screen and (max-width: 600px) {
+  .banner-image{
+    background-size: cover; /* Ensures the background image covers the entire screen on mobile */
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+  }
+}
 
 .nav-elements{
   margin-left: auto;
