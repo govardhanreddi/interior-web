@@ -10,7 +10,7 @@ function App() {
     window.location.href = whatsappUrl;
   };
   function downloadPDF() {
-    const pdfUrl = 'https://raw.githubusercontent.com/govardhanreddi/interiors-web/main/public/images/AARA_Brochure.pdf';
+    const pdfUrl = 'https://raw.githubusercontent.com/govardhanreddi/interiors-web/main/public/images/brochure.pdf';
     const link = document.createElement('a');
     link.href = pdfUrl;
     link.download = 'your.pdf';
@@ -146,58 +146,19 @@ function App() {
           <button onClick={whatsAppredirect} className='info2-button'>GET FREE QUOTE</button>
         </div>
       </div>
-      <div className='photos-div'>
-        <div className='container'>
-          <div className="row">
-          <div className="col-12 col-md-6 col-lg-3">
-          <div className="menu-item-card shadow p-3 mb-3">
-            <img
-              src="https://images.livspace-cdn.com/w:320/h:234/dpr:2/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/full-home-1682066987-lk16r.jpg"
-              className="menu-item-image w-100"
-              alt="Full Home Interiors"
-            />
-            <h1 className="menu-card-title">Full Home Interiors</h1>
-            <a href="#" className="menu-item-link">
-              View All
-              <svg width="16px" height="16px" viewBox="0 0 16 16" className="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div className="col-12 col-md-6 col-lg-3">
-          <div className="menu-item-card shadow p-3 mb-3">
-            <img
-              src="https://images.livspace-cdn.com/w:320/h:234/dpr:2/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/modular-1-1682066917-W5NcL.jpg"
-              className="menu-item-image w-100"
-              alt="Modular Interiors"
-            />
-            <h1 className="menu-card-title" >Modular Interiors</h1>
-            <a href="#" className="menu-item-link">
-              View All
-              <svg width="16px" height="16px" viewBox="0 0 16 16" className="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  fillRule="evenodd"
-                  d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                />
-              </svg>
-            </a>
-          </div>
-        </div>
-        <div className="col-12 col-md-6 col-lg-3">
-          <div className="menu-item-card shadow p-3 mb-3">
-            <img
-              src="https://images.livspace-cdn.com/w:320/h:234/dpr:2/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/reno-1682066988-lqJkS.jpg"
-              className="menu-item-image w-100"
-              alt="Renovations"
-            />
-            <h1 className="menu-card-title" id="followUsSection" >Renovations</h1>
-              <a href="" className="menu-item-link">
-                View All
-                <svg width="16px" height="16px" viewBox="0 0 16 16" className="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+      <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow menu-item-card p-3 mb-3">
+              <img
+                src="https://images.livspace-cdn.com/w:320/h:234/dpr:2/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/modular-1-1682066917-W5NcL.jpg"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Modular Interiors</h1>
+              <a href="" class="menu-item-link">
+                Visit Us 
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
                   <path
                     fill-rule="evenodd"
                     d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
@@ -206,10 +167,64 @@ function App() {
               </a>
             </div>
           </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="shadow menu-item-card p-3 mb-3">
+              <img
+                src="https://images.livspace-cdn.com/w:320/h:234/dpr:2/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/full-home-1682066987-lk16r.jpg"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Full Home Interiors</h1>
+              <a href="" class="menu-item-link">
+                Visit Us
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://images.livspace-cdn.com/w:320/h:234/dpr:2/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/vinviago-desk-1692618545-ToZjR.jpg"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Luxury Interiors</h1>
+              <a href="" class="menu-item-link">
+                Visit Us
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="menu-item-card shadow p-3 mb-3">
+              <img
+                src="https://images.livspace-cdn.com/w:320/h:234/dpr:2/plain/https://d3gq2merok8n5r.cloudfront.net/bumblebee/in/unification-home-1663681501-pVo75/desktop-1663681517-hulYi/offerings-interiors-1682066909-GMFDK/reno-1682066988-lqJkS.jpg"
+                class="menu-item-image w-100"
+              />
+              <h1 class="menu-card-title">Renovaitions</h1>
+              <a href="" class="menu-item-link">
+                Visit Us
+                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </a>
+            </div>
           </div>
         </div>
-      
-</div>
+      </div>
+    </div>
+
 <div className="follow-us-section pt-5 pb-5">
       <div className="container">
         <div className="row">
@@ -247,8 +262,8 @@ function App() {
           <div className="col-12 text-center">
           <h1 className='follow-us-section-heading'>Download home interior guide</h1>
             <p className=''>Don't forget to consider these fundamental design guidelines to know before you start interior designing!</p>
-            <button class="download-button" onclick="downloadPDF()">Download PDF</button>
-            <a href="public/images/AARA Brouchre.pdf" download="AARA Brouchre.pdf"><button className=''>Download Now</button></a>
+            {/* <button class="download-button" onclick="downloadPDF()">Download PDF</button> */}
+            <a href="public/images/brouchre.pdf" download="brouchre.pdf"><button className=''>Download Now</button></a>
           </div>
           </div>
           </div>
